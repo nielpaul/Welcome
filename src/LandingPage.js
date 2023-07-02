@@ -21,7 +21,7 @@ const joinWaitlist = async (event) => {
   
   try {
     /* Sends a response to the backend and gives it the information needed for registration */
-    await axios.post("http://localhost:3001/users/joinWaitlist", {
+    await axios.post("https://lollywestsite.onrender.com/users/joinWaitlist", {
     name,
     email,
     phoneNumber,
@@ -79,6 +79,9 @@ return (
    </div>
    <div className="w-50 bg-size-cover bg-repeat-0 bg-position-center" style={{ backgroundImage: "url('assets/img/podcast3.svg')" }}></div>
    </div>
+   <section class="bg-black pt-new pb-4 text-center">
+                  <h3 class="pb-4 text-white">Coming to the App Store June 1st, 2024</h3>
+               </section>
 </main>
 </>
 );

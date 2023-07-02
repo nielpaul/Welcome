@@ -19,7 +19,7 @@ const joinWaitlist = async (event) => {
    
    try {
      /* Sends a response to the backend and gives it the information needed for registration */
-     await axios.post("http://localhost:3001/users/joinWaitlist", {
+     await axios.post("https://lollywestsite.onrender.com/users/joinWaitlist", {
      name,
      email,
      phoneNumber,

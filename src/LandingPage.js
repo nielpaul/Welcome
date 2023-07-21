@@ -48,7 +48,7 @@ return (
          <img className="pt-3" draggable="false" src="assets/img/white.png"/>
          <h4 className="display-4 text-center text-lg-start pt-5 pb-sm-2 pb-md-3">Invest in creators, invest in yourself.</h4>
          <h5 className="fs-lg text-center text-lg-start  mx-auto mx-lg-0 mb-5">Be a part of what you love. We enable podcasters and their fans to thrive together. Join the Lollywest community to listen, discuss, and trade features of your favorite podcasts.</h5>
-         <form className="needs-validation" onSubmit={joinWaitlist} novalidate>
+         <form className="needs-validation" onSubmit={() => joinWaitlist} novalidate>
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-1 row-cols-lg-2">
                <div className="col mb-3">
                   <input className="form-control form-control-lg" type="text" placeholder="Name" onChange={(event) => setName(event.target.value)} required/>
